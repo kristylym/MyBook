@@ -74,8 +74,13 @@ body {
     &__name {
         font-family: 'Open Sans', serif;
         font-size: 18px;
-        letter-spacing: 0.7px;
-        margin-bottom: 30px;
+        letter-spacing: 1px;
+        margin-bottom: 29px;
+    }
+    &__name-top {
+        margin-top: 18px;
+        margin-left: 0;
+        margin-bottom: 16px;
     }
     &__title {
         font-size: 48px;
@@ -86,7 +91,7 @@ body {
             display: block;
             color: $accent-color;
             font-size: 18px;
-            margin-top: 10px;
+            margin-top: 11px;
             letter-spacing: 1px;
         }
     }
@@ -95,7 +100,7 @@ body {
         font-size: 15px;
         line-height: 24px;
         margin-bottom: 22px;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.75px;
 
     }
     &__btn {
@@ -116,6 +121,7 @@ body {
 .block-book {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 107px;
     &-demo {
         display: block;
         width: 447px;
@@ -124,4 +130,30 @@ body {
         background-repeat: no-repeat;
         flex-basis: 500px;
     }
+    small {
+        font-size: 12px;
+        font-family: 'Open Sans', serif;
+        font-style: italic;
+        letter-spacing: 0.2px;
+    }
+}
+.page {
+    padding-top: 160px;
+}
+.block-author {
+    display: flex;
+    justify-content: space-between;
+}
+.block-ava {
+    position: relative;
+    &__svg {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+    }
+    &__img {
+        padding-top: 47px;
+        padding-right: 42px;
+    }
+
 }
