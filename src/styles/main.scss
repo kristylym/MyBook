@@ -117,7 +117,7 @@ body {
     }
     &__btn {
         display: block;
-        background-color: $accent-color;
+        background: linear-gradient(to top left, #65e49b, #65e4b0);
         color: $light-color;
         text-decoration: none;
         max-width: 250px;
@@ -128,20 +128,12 @@ body {
         padding: 14px 0;
         letter-spacing: 0.7px;
         margin-bottom: 20px;
-        position: relative;
-        &::before {
-            content: '';
-            display: block;
-            height: 20px;
-            width:  100%;
-            background-color: #b2f1be;
-            position: absolute;
-            z-index: -1;
-            bottom: -2px;
-            border-radius: 3px;
-        }
+        box-shadow: 0 -2px #b2f1be inset;
         &_center {
-           margin: 0 auto;
+            margin: 0 auto;;
+        }
+        &_dark {
+            box-shadow: 0 -2px #5bb78e inset;
         }
     }
 }
@@ -194,18 +186,7 @@ body {
         margin-top: 28px;
         padding: 14px 45px;
         letter-spacing: .7px;
-        position: relative;
-        &::before {
-            content: '';
-            display: block;
-            height: 20px;
-            width:  100%;
-            background-color: #b2f1be;
-            position: absolute;
-            z-index: -1;
-            bottom: -2px;
-            border-radius: 3px;
-        }
+        box-shadow: 0 -2px #b2f1be inset;
         &_center {
             text-align: center;
         }
@@ -277,6 +258,7 @@ body {
     }
     &-table {
         flex-basis: 49%;
+        z-index: 0;
         &__list {
             margin: 25px 0 0 0;
             padding: 0;
@@ -311,7 +293,7 @@ body {
         }
         &__btn {
             display: block;
-            background-color: $accent-color;
+            background: linear-gradient(to top left, #65e49b, #65e4b0);
             color: $light-color;
             text-decoration: none;
             width: 135px;
@@ -323,18 +305,7 @@ body {
             letter-spacing: 0.7px;
             margin-bottom: 20px;
             border: none;
-            position: relative;
-            &::before {
-                content: '';
-                display: block;
-                height: 20px;
-                width:  100%;
-                background-color: #b2f1be;
-                position: absolute;
-                z-index: -1;
-                bottom: -2px;
-                border-radius: 3px;
-            }
+            box-shadow: 0 -2px #b2f1be inset;
         }
     }
 
