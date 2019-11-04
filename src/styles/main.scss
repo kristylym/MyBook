@@ -33,6 +33,10 @@ body {
     background-size: cover;
     color: $light-color;
     padding-bottom: 50px;
+    @media(max-width:510px){
+        flex-direction: column;
+        padding-bottom: 0;
+    }
 }
 .header {
     display: flex;
@@ -43,6 +47,7 @@ body {
     padding: 53px 20px 178px;
     @media(max-width:920px){
         flex-direction: column;
+        padding: 53px 20px 78px;
     }
     &__logo {
         display: block;
@@ -50,7 +55,7 @@ body {
         height: 28px;
         background-image: url(../img/logo.svg);
         background-repeat: no-repeat;
-        @media(max-width:920px){
+        @media(max-width:780px){
             padding-bottom: 20px;
         }
     }
@@ -59,13 +64,19 @@ body {
         display: flex;
         justify-content: flex-end;
         font-family: 'Open Sans', serif;
+        @media(max-width:920px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
         &__item {
             margin-left: 22px; 
             padding-bottom: 5px;
             border-bottom: 3px solid transparent;
             transition: 0.3s;
-
+            @media(max-width:920px){
+                padding: 10px 0;
+            }
             &:hover {
                 border-bottom: 3px solid $accent-color;
             }
@@ -171,7 +182,13 @@ body {
         flex-direction: column-reverse;
         margin: 0 auto;
         max-width: 600px;
-        // text-align: center;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    @media(max-width: 510px){
+        background-size: contain;
+        width: 280px;
+        margin-bottom: 0;
     }
     &-demo {
         display: block;
@@ -181,13 +198,13 @@ body {
         background-repeat: no-repeat;
         flex-basis: 500px;
         @media(max-width:1020px) {
-            margin: 0 auto;
-            max-width: 600px;
-            padding-bottom: 180px;
-            margin-top: 50px;
+            background-size: contain;
+            width: 400px;
+            margin: 30px auto 0;
         }
         @media(max-width: 510px){
-            flex-basis: 100%;    
+            background-size: contain;
+            width: 280px;
         }
     }
     small {
@@ -200,8 +217,16 @@ body {
 .page {
     padding-top: 150px;
     padding-bottom: 150px;
+    @media(max-width:1020px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
     &_gray {
         background-color: $bg-light-color;
+        @media(max-width:1020px) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
         }
     &__title {
         text-align: center;
@@ -275,6 +300,7 @@ body {
     padding-top: 170px;
     @media(max-width:750px){
         flex-direction: column;
+        padding-top: 100px;
     }
     p {
         font-family: 'Open Sans', serif;
@@ -464,6 +490,8 @@ body {
         flex-direction: column;
         margin: 0 auto;
         max-width: 600px;
+        padding-top: 45px;
+        padding-bottom: 0;
     }
     h4 {
         font-size: 18px;
